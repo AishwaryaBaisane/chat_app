@@ -5,5 +5,8 @@ class AuthController extends GetMaterialApp
 {
   TextEditingController txtEmail = TextEditingController();
   TextEditingController txtPassword = TextEditingController();
+  TextEditingController txtConfirmPassword = TextEditingController();
+  TextEditingController txtPhone = TextEditingController();
+  TextEditingController txtName = TextEditingController();
 
 }
