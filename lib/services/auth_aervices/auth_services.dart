@@ -7,7 +7,6 @@ class AuthService {
   AuthService._();
 
   static AuthService authService = AuthService._();
-
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
   // ACCOUNT CREATE - SIGN-UP
@@ -49,4 +48,5 @@ class AuthService {
     }
     return user;
   }
+
 }

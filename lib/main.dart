@@ -4,6 +4,7 @@ import 'package:chat_app/view/auth/Sign_in/sign_in.dart';
 import 'package:chat_app/view/auth/Sign_up/sign_up.dart';
 import 'package:chat_app/view/auth/auth_manager/auth_manager.dart';
 import 'package:chat_app/view/auth/first_page/first_page.dart';
+import 'package:chat_app/view/home/chat_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(
           name: '/',
-          page: () => const SplashScreen(),
+          page: () => const AuthManager(),
         ),
         GetPage(
           name: '/signIn',
@@ -40,6 +41,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/Home',
           page: () => const HomePage(),
+        ),
+        GetPage(
+          name: '/chat',
+          page: () => const ChatPage(),
         ),
       ],
     );
