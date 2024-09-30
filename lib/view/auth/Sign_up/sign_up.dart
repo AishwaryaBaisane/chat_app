@@ -4,6 +4,7 @@ import 'package:chat_app/Utils/global.dart';
 import 'package:chat_app/services/Cloud_fireStore/Cloud_fireStore_Service.dart';
 import 'package:chat_app/services/auth_aervices/auth_services.dart';
 import 'package:chat_app/view/home/home_page.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:custom_clippers/custom_clippers.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -211,8 +212,9 @@ class SignUp extends StatelessWidget {
                             email: controller.txtEmail.text,
                             phone: controller.txtPhone.text,
                             img:
-                                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqE5w5oSzJ5hkVXlqk9GW5aC--Jc97eU5bA&s",
-                            token: '---------');
+                                "https://i.pinimg.com/236x/c3/a2/fe/c3a2fe7bd31cd767ff0d9727c7ff9a04.jpg",
+                            token: '---------',
+                        );
                         CloudFireStoreService.cloudFireStoreService
                             .insertUserIntoFireStore(user);
                         Get.offAndToNamed('/Home');

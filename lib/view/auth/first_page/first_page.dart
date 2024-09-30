@@ -39,7 +39,7 @@ class FirstPage extends StatelessWidget {
               height: height * 0.07,
             ),
             Container(
-              height: height * 0.5957,
+              height: height * 0.59,
               width: double.infinity,
               // color: mainColor,
               decoration: BoxDecoration(

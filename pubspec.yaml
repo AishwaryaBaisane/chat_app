@@ -45,6 +45,12 @@ dependencies:
   flutter_custom_clippers: ^2.1.0
   custom_clippers: ^2.0.0
   glass: ^2.0.0+1
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+  firebase_messaging: ^15.1.2
+  image_picker: ^1.1.2
+  firebase_storage: ^12.3.2
+  animated_botton_navigation: ^0.0.7
 
 dev_dependencies:
   flutter_test:

@@ -1,4 +1,5 @@
 
+import 'dart:async';
 import 'dart:developer';
 
 import 'package:chat_app/Modal/User_modal.dart';
@@ -27,7 +28,7 @@ class GoogleAuthService
           email: userCredential.user!.email.toString(),
           phone: userCredential.user!.phoneNumber.toString(),
           img: userCredential.user!.photoURL.toString(),
-          token: '---------');
+          token: '---------',);
       CloudFireStoreService.cloudFireStoreService
           .insertUserIntoFireStore(user);
       log(userCredential.user!.email.toString());
